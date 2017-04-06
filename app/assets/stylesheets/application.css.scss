@@ -19,7 +19,56 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+// Basic Styles
+
+body {
+  margin-top: 100px;
+}
+
 // Typography Styles
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Roboto', sans-serif;
+}
+
+// Navbar Styles
+
+.navbar {
+  background-color: #1A2B4C;
+}
+
+img {
+  width: 45px;
+  height: 45px;
+}
+
+.navbar-left {
+  height: 80px;
+  padding: 18px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-default .navbar-left,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+    text-decoration: none;
+  }
+}
+
+.nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
 }
