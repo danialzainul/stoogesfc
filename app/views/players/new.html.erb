@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="text-center">Add a Player</h1>
+
+  <%= simple_form_for(@player) do |f| %>
+    <div class="form-group">
+      <%= f.input :name, error: 'Name cannot be blank', autofocus: true %>
+    </div>
+    <div class="form-group">
+      <%= f.input :age %>
+    </div>
+    <div class="form-group">
+      <%= f.label :position %>
+      <%= f.select :position, ['Goalkeeper', 'Defender', 'Midfielder', 'Striker'], {}, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.input :squad_no %>
+    </div>
+    <div class="form-group">
+      <%= f.input :quote %>
+    </div>
+    <div class="form-group">
+      <%= f.button :submit, class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
